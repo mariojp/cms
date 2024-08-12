@@ -5,6 +5,7 @@
 	<groupId>br.com.ucsal</groupId>
 	<artifactId>cms</artifactId>
 	<version>0.0.1</version>
+	<packaging>jar</packaging>
 	<properties>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
