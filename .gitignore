@@ -1,0 +1,177 @@
+# IDEs and editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Maven/Gradle specific files
+target/
+build/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse specific files
+.project
+.classpath
+.c9/
+.settings/
+bin/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans specific files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VS Code specific files
+.vscode/
+
+# MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux specific files
+*~
+.nfs*
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# Generated files
+gen/
+generated/
+
+# Logs
+logs/
+*.log
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/target/
+
+# Gradle
+.gradle/
+build/
+
+# Others
+*.patch
+*.diff
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.tmproj
+*.sln
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Node specific
+node_modules/
+npm-debug.log
+yarn-error.log
+lerna-debug.log
+.pnp/
+.pnp.js
+
+# Environment specific
+.env
+.env.*
+.envrc
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*~
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+hs_err_pid*
+replay_pid*
+*.class
+*.log
+
+# Config
+*.properties
+
+# Package Files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.tar
+*.zip
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Icon must end with two \r
+Icon
