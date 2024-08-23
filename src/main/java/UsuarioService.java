@@ -2,9 +2,13 @@
 public class UsuarioService {
 
 	
-    public boolean validarLogin(Usuario usuario) {
-        return usuario.getUsername() != null && !usuario.getUsername().isEmpty()
-               && usuario.getUsername().equals(usuario.getPassword());
+    public Usuario validarLogin(String username, String password) {
+        Usuario usuario = null;
+        if(username != null && !username.isEmpty()
+               && username.equals(password)){
+            usuario =  new Usuario(username,password);
+        }
+        return usuario;
     }
 
 }

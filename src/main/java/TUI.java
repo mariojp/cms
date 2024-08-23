@@ -21,8 +21,8 @@ public class TUI extends UI {
                     String username = scanner.nextLine();
                     System.out.print("Digite o password: ");
                     String password = scanner.nextLine();
-                    Usuario usuario = new Usuario(username, password);
-                    if (usuarioService.validarLogin(usuario)) {
+                    Usuario usuario = usuarioService.validarLogin(username, password);
+                    if (usuario != null) {
                         return usuario;
                     }
                     System.out.println("Login inválido.");
