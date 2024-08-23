@@ -1,40 +1,33 @@
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ConteudoService {
 	
 
-    private List<Conteudo> conteudos = new ArrayList<>();
-    private int count = 1 ;
+	private Persistencia<Conteudo> persistencia;
 
-    public void save(Conteudo conteudo) {
-    	if(conteudo.getId() == null) {
-    		conteudo.setId(count++);
-    	}
-        conteudos.add(conteudo);
+    public ConteudoService(Persistencia<Conteudo> persistencia) {
+		this.persistencia = persistencia;
+	}
+
+	public void save(Conteudo conteudo) {
+		persistencia.save(conteudo);
     }
 
-    public void atualizarConteudo(int id, String titulo, String texto) {
-        for (Conteudo conteudo : conteudos) {
-            if (conteudo.getId() == id) {
-                conteudo.setTitulo(titulo);
-                conteudo.setTexto(texto);
-                break;
-            }
-        }
+    
+	public void atualizarConteudo(int id, String titulo, String texto, Usuario autor) {
+		persistencia.atualizar(new Conteudo(id, titulo, texto, autor));
     }
 
-    public List<Conteudo> listarConteudos() {
-        return Collections.unmodifiableList(conteudos);
+	public List<Conteudo> listarConteudos() {
+		return persistencia.listar();
     }
 
-    public boolean removerConteudo(int id) {
-        return conteudos.removeIf(conteudo -> conteudo.getId() == id);
+	public boolean removerConteudo(int id) {
+		return persistencia.remover(id);
     }
 
-    public Conteudo buscarPorId(int id) {
-        return conteudos.stream().filter(c -> c.getId() == id).findFirst().orElse(null);
-    }
+	
+
+
 }

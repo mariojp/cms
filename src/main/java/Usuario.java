@@ -2,6 +2,9 @@ public class Usuario {
 
     private String username;
     private String password;
+    
+    public Usuario() {
+	}
 
     public Usuario(String username, String password) {
         this.username = username;
@@ -23,4 +26,13 @@ public class Usuario {
     public void setPassword(String password) {
         this.password = password;
     }
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Usuario [username=").append(username).append(", password= ********").append("]");
+		return builder.toString();
+	}
+    
+    
 }

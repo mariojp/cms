@@ -13,6 +13,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
+	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+	<dependency>
+	    <groupId>org.hsqldb</groupId>
+	    <artifactId>hsqldb</artifactId>
+	    <version>2.7.3</version>
+	</dependency>
+
+	</dependencies>
 	<build>
 		<plugins>
         <plugin>
